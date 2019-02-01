@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">EncryptionKotlinUtility</string>
+    <string name="android_security_title">Android Security</string>
+    <string name="aes_encryption_shared_pref">AES Encryption Shared Pref</string>
+    <string name="aes_encryption_realm_db">AES Encryption Realm Db</string>
+    <string name="rsa_encryption">RSA Encryption</string>
+    <string name="data_content">Enter any content</string>
+    <string name="aes_encryption_key">Enter encryption key</string>
+    <string name="aes_decryption_key">Enter decryption key</string>
+    <string name="encrypt_btn">Encrypt</string>
+    <string name="decrypt_btn">Decrypt</string>
+
+    <string name="title_activity_person_details">Details</string>
+    <string name="person_name_hint">Enter Name</string>
+    <string name="person_email_hint">Enter E-mail</string>
+    <string name="perosn_address_hint">Enter Address</string>
+    <string name="person_age_hint">Enter Age</string>
+
+    <string name="str_btn_download">Download</string>
+    <string name="str_iv_description">Downloaded Image</string>
+    <string name="str_tv_url">http://wptrafficanalyzer.in/blog/demo/img6.jpg</string>
+
+</resources>

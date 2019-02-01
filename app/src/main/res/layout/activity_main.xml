@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:layout_margin="10dp">
+
+    <TextView
+            android:text="@string/android_security_title"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitle" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="@string/aes_encryption_shared_pref"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/aes_encryption_sp_btn"
+            android:onClick="sharedPrefAesEncryption"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="@string/aes_encryption_realm_db"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/aes_encryption_realm_btn"
+            android:onClick="realmAesEncryption" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="13dp" app:layout_constraintTop_toBottomOf="@+id/aes_encryption_sp_btn"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="@string/rsa_encryption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rsa_encryption_btn" android:onClick="rsaEncryption"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginTop="13dp" app:layout_constraintTop_toBottomOf="@+id/aes_encryption_realm_btn"/>
+    <Button
+            android:text="Retrofit Certificate Pinning"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/retrofit_certificate_pinning_btn"
+            android:onClick="retrofitCertificatePinning"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="13dp" app:layout_constraintTop_toBottomOf="@+id/rsa_encryption_btn"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="Certificate Pinning"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="certificatePinning"
+            android:id="@+id/certificate_pinning_btn" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="13dp" app:layout_constraintTop_toBottomOf="@+id/retrofit_certificate_pinning_btn"
+            app:layout_constraintEnd_toEndOf="parent"/>
+</android.support.constraint.ConstraintLayout>
